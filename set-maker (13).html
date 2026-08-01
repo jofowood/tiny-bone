@@ -206,7 +206,7 @@
     <button class="close-x" id="modal-close">&times;</button>
     <h3>Request this Tiny Bone Set</h3>
     <p class="assemblage-id" id="f-id"></p>
-    <p class="sub">Leave your details and I'll follow up to confirm, arrange payment, and sort delivery.</p>
+    <p class="sub">Leave your details and I'll follow up to confirm, arrange payment, and such.</p>
     <div class="field"><label for="f-name">Name</label><input id="f-name" type="text" placeholder="Your name"></div>
     <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" placeholder="you@example.com"></div>
     <div class="field"><label for="f-notes">Notes (optional)</label><textarea id="f-notes" placeholder="Anything about materials, timing..."></textarea></div>
@@ -696,7 +696,7 @@ function triggerImageDownload(){
 downloadBtn.addEventListener('click', triggerImageDownload);
 
 const sendBtn = document.getElementById('send-btn');
-const SUBJECT_LINE = "My Tiny Bone Set"; // fixed for every request, regardless of shape/ID
+const SUBJECT_LINE = "New Tiny Bone Set"; // fixed for every request, regardless of shape/ID
 
 function buildEmailBody(){
   const name = document.getElementById('f-name').value.trim();
