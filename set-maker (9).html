@@ -164,7 +164,7 @@
     <div class="panel">
       <h2>Tiny Bone Set Maker</h2>
      <p>Drag Tiny Bone and Colors from here and Drop them below to design your custom Tiny Bone Set. No, you don't have to use all the spaces; your custom Tiny Bone Set can be 1 Space if you like.</p>
-     <p>Painted You can use the Fill Colors to close any gap in your shape that doesn't contain a Tiny Bone</p>
+     <p>You can use the Fill Colors to close any gap in your shape that doesn't contain a Tiny Bone.</p>
      <ul class="palette-list" id="palette"></ul> 
       <ul class="palette-list" id="fillers"></ul>
     </div>
@@ -177,7 +177,7 @@
       </h2>
       <div class="board-scroll">
         <div class="board" id="board"></div>
-          <p class="fill-status" id="fill-status">Place a piece to start your shape.</p>
+          <p class="fill-status" id="fill-status">Place a piece to start your Tiny Bone Set</p>
       </div>
     </div>
 
@@ -188,7 +188,7 @@
         <div class="count-row"><span>Bones used</span><strong><span id="count-placed">0</span> / 17</strong></div>
         <div class="count-row"><span>Shape size</span><strong id="count-shape">—</strong></div>
         <div class="count-row"><span>Set dimensions</span><strong id="count-dimensions">—</strong></div>
-        <div class="count-row"><span>Gaps in shape</span><strong id="count-remaining">0</strong></div>
+        <div class="count-row"><span>Gaps in shape.</span><strong id="count-remaining">0</strong></div>
         <p class="fill-status" id="fill-status">Place a piece to start your shape.</p>
         <button class="ghost" id="reset-btn">Clear the Set</button>
         <button class="primary" id="order-btn" disabled>Request this Tiny Bone Set</button>
@@ -524,7 +524,7 @@ function updateCounts(){
     fillStatusEl.textContent = "Shape is a solid rectangle — ready to request.";
     fillStatusEl.classList.add('ready');
   } else {
-    fillStatusEl.textContent = `${stats.gaps} gap${stats.gaps === 1 ? '' : 's'} inside your shape — fill them with a color to make it a solid rectangle.`;
+    fillStatusEl.textContent = `${stats.gaps} gap${stats.gaps === 1 ? '' : 's'} inside your Tiny Bone Set`;
     fillStatusEl.classList.remove('ready');
   }
 }
